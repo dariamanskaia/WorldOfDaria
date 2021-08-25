@@ -1,0 +1,16 @@
+#contactForm{
+    #message{
+        height: 15rem;  
+    }
+    .form-control{
+        background: none;
+        border: 1px solid #ced4da;
+        transition: all 1s;
+        &:focus{
+            background-color: hsla(75, 10%, 40%, 0.2);
+            transition: all 1s;
+            border: none;
+            box-shadow: 0 0 0 0.15rem hsla(75, 10%, 40%, 0.2);
+        }
+    }
+}
