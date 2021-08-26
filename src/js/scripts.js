@@ -102,13 +102,16 @@ const declareEvents = () => {
 const timelineHide = (e) => {
     const timelinePanel = $(e.delegateTarget).parent().children('.timeline-panel');
     const timelinePanelMin = $(e.delegateTarget).parent().children('.timeline-panel-min');
+    const timelineInvertedPanelMin = $(e.delegateTarget).parent().children('.timeline-inverted-panel-min');
 
     if (!timelinePanel.hasClass('hidden')){
         timelinePanel.addClass('hidden');
         timelinePanelMin.removeClass('hidden');
+        timelineInvertedPanelMin.removeClass('hidden');
     }
     else{
         timelinePanel.removeClass('hidden');
         timelinePanelMin.addClass('hidden');
+        timelineInvertedPanelMin.addClass('hidden');
     }
 }

@@ -56,8 +56,8 @@ html(lang='en')
                             .container
                                 .hero-content
                                     h1 I'm
-                                        span.typed(data-typed-items='Dária Gonçalves, Designer, Developer, Freelancer, Videographer')
-                                    p Designer, Developer, Freelancer, Videographer
+                                        span.typed(data-typed-items='Dária Gonçalves, Designer, Developer, Videographer, Freelancer')
+                                    p Designer, Developer, Videographer, Freelancer
                                     ul.list-unstyled.list-social
                                         li
                                             a.bi.bi-github(href='https://github.com/dariamanskaia')
@@ -87,15 +87,15 @@ html(lang='en')
                         p.text-white-75.mb-4
                             | With a creative and constructive spirit I adapt quickly to new contexts and have a good problem-solving ability. I have leadership skills and am familiar with teamwork. I value time management, but I know how to be productive under pressure. My intention is to constantly evolve and for that I always seek to deepen and update knowledge in several areas.
                         br
-                        p.text-white-75.mb-4
-                            | You could follow my timeline, but I know you are here to check my real skills! 
+                        p.text-white-75.mb-1
+                            | You could follow my timeline, but I know you are here  
                         // Button
-                        a.btn.btn-light.btn-xl.mb-4(href='#skills') Follow the timeline or Check out my skills
+                        a.btn.btn-light.btn-md.xl-4(href='#skills') to check my real skills!
 
                 // Timeline
                 div.text-center.text-white
                     .page-header
-                        h3#timeline.text-white.mb-4 Timeline
+                        h3#timeline.text-white.mt-4.mb-2 Timeline
                     div
                         ul.timeline
                             li
@@ -110,8 +110,8 @@ html(lang='en')
                                                 |  (June 2021 - August 2021)
                                     .timeline-body
                                         p
-                                            | Programming course that covers HTML, JavaScript and CSS.. During this course I built YelpCamp is a web app to find and provide information about campgrounds' availability everywhere! Made during my course on udemy.com, the Web Development Bootcamp.
-                                        a.btn.btn-light.btn-md.mt-2(href='https://calm-meadow-89539.herokuapp.com/#' target='_blank') Check my YelpCamp project!
+                                            | The WDB is a programming course available on udemy.com, that covers HTML, JavaScript, CSS, among many other tools and technologies. During this course I practiced with several small websites and a big project, a web app to find and provide information about campgrounds' availability everywhere! Make sure to take a look and register to unveal the full App potencial.
+                                        a.btn.btn-light.btn-md.mt-2(href='https://calm-meadow-89539.herokuapp.com/#' target='_blank') See my YelpCamp project!
                                 .timeline-panel-min.hidden
                                     .timeline-heading
                                         i.bi-book
@@ -125,13 +125,20 @@ html(lang='en')
                                 .timeline-panel
                                     .timeline-heading
                                         i.bi-book
-                                        h5.timeline-title CodeHero Challenge
+                                        h5.timeline-title CodeHero Challenges
                                             .small
                                                 i.bi-clock
                                                 |  (April 2021)
                                     .timeline-body
                                         p
-                                            | “CodeHero” is a JavaScript course that gave me basic tools in the world of programming. I completed the challenge in the top 5. 
+                                            | “CodeHero” is a JavaScript course from Code Academy that gave me basic tools in the world of programming and nurtured in me the desire to program. I completed the challenge in second place with an honorable mention by Aveiro Municipality.
+                                .timeline-inverted-panel-min.hidden
+                                    .timeline-heading
+                                        i.bi-book
+                                        h5.timeline-title CodeHero Challenges
+                                            .small
+                                                i.bi-clock
+                                                |  (April 2021)                                
                             li
                                 .timeline-badge
                                     i.glyphicon.glyphicon-check
@@ -145,6 +152,13 @@ html(lang='en')
                                     .timeline-body
                                         p
                                             | I love working in multimedia areas such as videography, photography and design, through programs such as Adobe Creative Cloud (Photoshop, Illustrator, inDesign, Premiere, Lightroom), Davinci Resolve, Gimp, Inkscape, Rawtherapee and Procreate.
+                                .timeline-panel-min.hidden
+                                    .timeline-heading
+                                        i.bi-briefcase
+                                        h5.timeline-title Freelance
+                                            .small
+                                                i.bi-clock
+                                                |  (January 2020 - Present)
                             li.timeline-inverted
                                 .timeline-badge
                                     i.glyphicon.glyphicon-check
@@ -158,6 +172,13 @@ html(lang='en')
                                     .timeline-body
                                         p
                                             | Working on SalesForce, a Customer Relationship Management plataform, I developed my skills as an account manager of the most luxurious brands of lighting and furniture brands.
+                                .timeline-inverted-panel-min.hidden
+                                    .timeline-heading
+                                        i.bi-briefcase
+                                        h5.timeline-title Customer Relationship Management (CRM)
+                                            .small
+                                                i.bi-clock
+                                                |  (May 2021 - June 2021)
                             li
                                 .timeline-badge
                                     i.glyphicon.glyphicon-check
@@ -171,6 +192,13 @@ html(lang='en')
                                     .timeline-body
                                         p
                                             | I developed several capacities in areas such as marketing, management, consultancy, market analysis.
+                                .timeline-panel-min.hidden
+                                    .timeline-heading
+                                        i.bi-briefcase
+                                        h5.timeline-title Marketeer
+                                            .small
+                                                i.bi-clock
+                                                |  (January 2018 - January 2020)
                             li.timeline-inverted
                                 .timeline-badge
                                     i.glyphicon.glyphicon-check
@@ -184,10 +212,13 @@ html(lang='en')
                                     .timeline-body
                                         p
                                             | I developed several capacities in areas such as marketing, management, consultancy, market analysis.
-
-                        
-
-            
+                                .timeline-inverted-panel-min.hidden
+                                    .timeline-heading
+                                        i.bi-book
+                                        h5.timeline-title Degree in Tourism
+                                            .small
+                                                i.bi-clock
+                                                |  (September 2014 - July 2017)
 
 
         // Skills
@@ -199,27 +230,27 @@ html(lang='en')
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-gem.fs-1.text-primary
+                                i.bi-file-code.fs-1.text-primary
                             h3.h4.mb-2 Web Developer
-                            p.text-muted.mb-0 HTML, CSS, JS, NodeJS, Mongo, Express, Jquery
+                            p.text-muted.mb-0 HTML, JavaScript , SCSS, NodeJS, MongoDB, Bootstrap, Pug, Express, jQuery
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-laptop.fs-1.text-primary
+                                i.bi-camera-reels.fs-1.text-primary
                             h3.h4.mb-2 Videographer
-                            p.text-muted.mb-0 Slicing, Cropping, SFX, VFX, Motion Graphics
+                            p.text-muted.mb-0 Slicing, Cropping, SFX, VFX, Motion Graphics on Davinci Relsove and Adobe Premiere
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-globe.fs-1.text-primary
+                                i.bi-brush.fs-1.text-primary
                             h3.h4.mb-2 Designer
                             p.text-muted.mb-0 Photoshop, Illustrator, inDesign, Lightroom, Gimp, Inkscape, Rawtherapee and Procreate
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-heart.fs-1.text-primary
+                                i.bi-shop-window.fs-1.text-primary
                             h3.h4.mb-2 Marketing
-                            p.text-muted.mb-0 Management, Content creator, CRM, Public Relations
+                            p.text-muted.mb-0 Management, Content creator, CRM, Public Relations, Google Ads &amp; Analytics
 
         // Portfolio
         #portfolio

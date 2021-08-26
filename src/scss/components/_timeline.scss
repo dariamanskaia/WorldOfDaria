@@ -47,24 +47,7 @@
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   @include lg{
-    width: 90%;
-  }
-}
-
-.timeline > li > .timeline-panel-min {
-  width: 46%;
-  float: left;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  &:hover {
-    cursor: pointer;
-  }
-  @include lg{
-    width: 90%;
+    width: 90%;    
   }
 }
 
@@ -90,6 +73,47 @@
   border-bottom: 14px solid transparent;
   content: " ";
 }
+
+.timeline > li > .timeline-panel-min {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  &:hover {
+    cursor: pointer;
+  }
+  @include lg{
+    width: 90%;
+  }
+}
+
+.timeline > li > .timeline-panel-min:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel-min:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 50px;
@@ -112,11 +136,12 @@
   &:hover{
     border: 5px solid $primary;
     transition: all .5s;
-  }
-  @include lg{
-    left: 100%;
+  }  @include lg{
+    left: 100%;   
   }
 }
+
+// Timeline inverted
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   @include lg {
@@ -124,6 +149,7 @@
     float:  none;
   }
 }
+
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
@@ -148,6 +174,96 @@
   left: -14px;
   right: auto;
 }
+
+//Timeline inverted min
+.timeline > li.timeline-inverted > .timeline-inverted-panel-min {
+  width: 46%;
+  float: right;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  &:hover {
+    cursor: pointer;
+  }
+  @include sm{
+    float: left;
+  }
+  @include md{
+    float: left;
+  }
+  @include lg{
+    width: 90%;
+    float: left;
+  }
+}
+
+.timeline > li.timeline-inverted > .timeline-inverted-panel-min:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+  @include lg {
+    position: absolute;
+    display: none;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 0 solid #ccc;
+    border-right: 15px solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+}
+.timeline > li.timeline-inverted > .timeline-inverted-panel-min:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+
+// .timeline > li > .timeline-inverted-panel-min:before {
+//   position: absolute;
+//   top: 26px;
+//   right: -15px;
+//   display: inline-block;
+//   border-top: 15px solid transparent;
+//   border-left: 15px solid #ccc;
+//   border-right: 0 solid #ccc;
+//   border-bottom: 15px solid transparent;
+//   content: " ";
+//   @include lg {
+//     position: absolute;
+//     display: none;
+//     top: 26px;
+//     right: -15px;
+//     display: inline-block;
+//     border-top: 15px solid transparent;
+//     border-left: 0 solid #ccc;
+//     border-right: 15px solid #ccc;
+//     border-bottom: 15px solid transparent;
+//     content: " ";
+//   }
+// }
+// .timeline > li > .timeline-inverted-panel-min:after {
+//   position: absolute;
+//   top: 27px;
+//   right: -14px;
+//   display: inline-block;
+//   border-top: 14px solid transparent;
+//   border-left: 14px solid #fff;
+//   border-right: 0 solid #fff;
+//   border-bottom: 14px solid transparent;
+//   content: " ";
+// }
+
+
+
+
 .timeline-badge.primary {
   background-color: #6B705C !important;
 }
