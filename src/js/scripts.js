@@ -4,6 +4,8 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -51,6 +53,9 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    //declare event listeners
+    declareEvents();
+
 });
 
 
@@ -81,4 +86,29 @@ window.addEventListener('DOMContentLoaded', event => {
      backDelay: 2000
    });
  }
-  
+
+/**
+ * Declare events
+ */
+const declareEvents = () => {
+    $('.timeline-badge').on('click', timelineHide);
+    $('.timeline-panel-min').on('click', timelineHide);
+}
+
+/**
+ * Hide timeline branch on click
+ * @param {Event} e 
+ */
+const timelineHide = (e) => {
+    const timelinePanel = $(e.delegateTarget).parent().children('.timeline-panel');
+    const timelinePanelMin = $(e.delegateTarget).parent().children('.timeline-panel-min');
+
+    if (!timelinePanel.hasClass('hidden')){
+        timelinePanel.addClass('hidden');
+        timelinePanelMin.removeClass('hidden');
+    }
+    else{
+        timelinePanel.removeClass('hidden');
+        timelinePanelMin.addClass('hidden');
+    }
+}
