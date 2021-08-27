@@ -98,6 +98,7 @@ window.addEventListener('DOMContentLoaded', event => {
 const declareEvents = () => {
     $('.timeline-badge').on('click', timelineHide);
     $('.timeline-panel-min').on('click', timelineHide);
+    $('.timeline-inverted-panel-min').on('click', timelineHide);
 }
 
 /**
@@ -108,14 +109,19 @@ const timelineHide = (e) => {
     const timelinePanel = $(e.delegateTarget).parent().children('.timeline-panel');
     const timelinePanelMin = $(e.delegateTarget).parent().children('.timeline-panel-min');
     const timelineInvertedPanelMin = $(e.delegateTarget).parent().children('.timeline-inverted-panel-min');
+    const badgeBtn = $(e.delegateTarget);
 
+    //Hide timeline panel and show minimized panel
     if (!timelinePanel.hasClass('hidden')){
         timelinePanel.addClass('hidden');
+        badgeBtn.addClass('minimized');
         timelinePanelMin.removeClass('hidden');
         timelineInvertedPanelMin.removeClass('hidden');
     }
-    else{
+    //show timeline panel
+    else{ 
         timelinePanel.removeClass('hidden');
+        badgeBtn.removeClass('minimized');
         timelinePanelMin.addClass('hidden');
         timelineInvertedPanelMin.addClass('hidden');
     }

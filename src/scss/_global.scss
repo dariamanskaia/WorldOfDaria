@@ -30,3 +30,11 @@ body {
 .hidden {
     display: none;
 }
+
+.minimized {
+  background-color: hsl(60, 4%, 67%);
+  border: 5px solid $primary;
+  &:hover{
+      border: none;
+  }
+}
