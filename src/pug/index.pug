@@ -46,6 +46,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#contact') Contact
 
+
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.h-100
@@ -104,7 +105,7 @@ html(lang='en')
                                                 |  &#160;(September 2021 - April 2022)
                                     .timeline-body
                                         p
-                                            | Web Development Training (Microsoft Specialization) developed by Talenter Academy. The program includes "Introduction to Programming and Databases", "Full Stack Development" (with HTML, CSS, JS, jQuery, Bootstrap, React, Angular JS, Python, PHP, C#). It will be completed with the ocial “Microsoft Certied” exams: Azure Fundamentals (AZ - 900) / Azure Developer Associate (AZ - 204) / Power Platform Fundamentals (PL - 900).
+                                            | Web Development Training (Microsoft Specialization) developed by Talenter Academy. The program includes "Introduction to Programming and Databases", "Full Stack Development" (with HTML, CSS, JS, jQuery, Bootstrap, React, Angular JS, Python, PHP, C#). It will be completed with the oficial “Microsoft Certified” exams: Azure Fundamentals (AZ - 900) / Azure Developer Associate (AZ - 204) / Power Platform Fundamentals (PL - 900).
                                 .timeline-inverted-panel-min.hidden
                                     .timeline-heading
                                         .i.bi-book.h5.timeline-title  &#160; Web Development
@@ -232,7 +233,7 @@ html(lang='en')
                             .mb-2
                                 i.bi-file-code.fs-1.text-primary
                             h3.h4.mb-2 Web Developer
-                            p.text-muted.mb-0 HTML, JavaScript , SCSS, NodeJS, MongoDB, Bootstrap, Pug, Express, jQuery
+                            p.text-muted.mb-0 HTML, CSS, JavaScript, NodeJS, MongoDB, React, Bootstrap, Pug, Express, jQuery, SCSS,
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
@@ -244,66 +245,79 @@ html(lang='en')
                             .mb-2
                                 i.bi-brush.fs-1.text-primary
                             h3.h4.mb-2 Designer
-                            p.text-muted.mb-0 Photoshop, Illustrator, inDesign, Lightroom, Gimp, Inkscape, Rawtherapee and Procreate
+                            p.text-muted.mb-0 Illustrator, Photoshop, Figma, inDesign, Gimp, Inkscape, Rawtherapee and Procreate
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
                                 i.bi-shop-window.fs-1.text-primary
                             h3.h4.mb-2 Marketing
                             p.text-muted.mb-0 Management, Content creator, CRM, Public Relations, Google Ads &amp; Analytics
+                
 
         // Portfolio
-        #portfolio
+        section#portfolio.page-section
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Recently done projects
+                hr.divider
+                div.mb-2.mt-2.button-group
+                    .btn.category-link(data-category='all') All
+                    .btn.category-link(data-category='videography') Videography
+                    .btn.category-link(data-category='design') Design
+                    .btn.category-link(data-category='webDevelopment') Programming
+                                                
+                    
             .container-fluid.p-0
-                .row.g-0
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box.lightBoxVideoLink(href='https://www.youtube.com/embed/DiwFIneRpRc', title='DIY Video Tutorial', target='_self')
+                .row.g-2
+                    .col-lg-4.col-sm-6.portfolio-item.all.webDevelopment
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/1.jpg', title='Web App with Database and Jquery')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/1.jpg', alt='...')
-                            .portfolio-box-caption
+                            .portfolio-box-caption.p-3
                                 .project-category.text-white-50
-                                    | Videography
+                                    | Web Developer
                                 .project-name
-                                    | DIY Video Tutorial
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/2.jpg', title='Advertisement Poster')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Design
-                                .project-name
-                                    | Advertisement Poster
-                    .col-lg-4.col-sm-6
+                                    | Web App using JavaScript, CSS, EJS, Node.js, MongoDB
+                    .col-lg-4.col-sm-6.portfolio-item.all.videography
                         a.portfolio-box.lightBoxVideoLink(href='https://www.youtube.com/embed/e8kYeEuQ8kM', title='Landscape Video from Azores', target='_self')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.jpg', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
                                     | Videography
                                 .project-name
                                     | Landscape Video from Azores
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box.defaults(href='assets/img/portfolio/fullsize/4.jpg', title='Static Website')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='...')
+                    .col-lg-4.col-sm-6.portfolio-item.all.webDevelopment
+                        a.portfolio-box.defaults(href='assets/img/portfolio/fullsize/2.jpg', title='Static Website')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
                                     | Web Developer
                                 .project-name
-                                    | Static Website
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg', title='Wedding Logo')
+                                    | Static Website using HTML, CSS
+                    .col-lg-4.col-sm-6.portfolio-item.all.design
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg', title='Advertisement Poster')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
                                     | Design
                                 .project-name
-                                    | Wedding Logo
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg', title='Web App with Database and Jquery')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='...')
-                            .portfolio-box-caption.p-3
+                                    | Advertisement Poster
+                    .col-lg-4.col-sm-6.portfolio-item.all.videography
+                        a.portfolio-box.lightBoxVideoLink(href='https://www.youtube.com/embed/DiwFIneRpRc', title='DIY Video Tutorial', target='_self')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='...')
+                            .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Web Developer
+                                    | Videography
                                 .project-name
-                                    | Web App with Database and Jquery
+                                    | DIY Video Tutorial
+                    .col-lg-4.col-sm-6.portfolio-item.all.design
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg', title='Wedding Logo')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Design
+                                .project-name
+                                    | Wedding Logo
+                    
+
 
         // Call to action
         section.page-section.bg-primary.text-white
@@ -401,6 +415,10 @@ html(lang='en')
                 .small.text-center.text-muted
                     | Copyright &copy; 2021 - Dária Manskaia Gonçalves
 
+        
+        // Portfolio
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js')
+        
         // jQuery
         script(src='https://code.jquery.com/jquery-3.6.0.min.js')
 
@@ -412,6 +430,9 @@ html(lang='en')
 
         // Typed plugin JS
         script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12')
+        
+        // Isotope JS
+        script(src='js/isotope.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
