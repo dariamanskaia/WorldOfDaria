@@ -11286,7 +11286,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .text-white-75 {
@@ -11307,16 +11307,15 @@ body {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 1.25rem 2.25rem;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
-  color: #B7B7A4;
+  color: #6B705C;
 }
 
 .btn-md {
-  padding: 1.25rem 2.25rem;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -11325,7 +11324,6 @@ body {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -11530,8 +11528,8 @@ hr.divider-light {
 
 .timeline > li > .timeline-badge {
   color: #fff;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   line-height: 50px;
   font-size: 1.4em;
   text-align: center;
@@ -11693,7 +11691,7 @@ header.masthead .hero-content .list-social li i {
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
-  max-width: 1920px;
+  max-width: 1300px;
 }
 #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
   position: relative;
@@ -11722,7 +11720,7 @@ header.masthead .hero-content .list-social li i {
   text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;

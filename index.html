@@ -71,11 +71,9 @@
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">With a creative and constructive spirit I adapt quickly to new contexts and have a good problem-solving ability. I have leadership skills and am familiar with teamwork. I value time management, but I know how to be productive under pressure. My intention is to constantly evolve and for that I always seek to deepen and update knowledge in several areas.</p>
                         <br />
-                        <p class="text-white-75 mb-1">
-                            You could follow my timeline and hover along my learnings from previous years, but I know you are here
-                            <!-- Button-->
-                            <a class="btn btn-light btn-lg lg-4 mb-4" href="#skills">to check my real skills!</a>
-                        </p>
+                        <p class="text-white-75 mb-1">You could follow my timeline and hover along my learnings from previous years, but I know you are here</p>
+                        <!-- Button-->
+                        <a class="btn btn-light btn-lg lg-4 mb-4" href="#skills">to check my real skills!</a>
                     </div>
                 </div>
                 <!-- Timeline-->
@@ -95,7 +93,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="timeline-body"><p>Web Development Training (Microsoft Specialization) developed by Talenter Academy. The program includes "Introduction to Programming and Databases", "Full Stack Development" (with HTML, CSS, JS, jQuery, Bootstrap, React, Angular JS, Python, PHP, C#). It will be completed with the ocial “Microsoft Certied” exams: Azure Fundamentals (AZ - 900) / Azure Developer Associate (AZ - 204) / Power Platform Fundamentals (PL - 900). .timeline-inverted-panel-min.hidden</p></div>
+                                    <div class="timeline-body"><p>Web Development Training (Microsoft Specialization) developed by Talenter Academy. The program includes "Introduction to Programming and Databases", "Full Stack Development" (with HTML, CSS, JS, jQuery, Bootstrap, React, Angular JS, Python, PHP, C#). It will be completed with the oficial “Microsoft Certified” exams: Azure Fundamentals (AZ - 900) / Azure Developer Associate (AZ - 204) / Power Platform Fundamentals (PL - 900).</p></div>
+                                </div>
+                                <div class="timeline-inverted-panel-min hidden">
                                     <div class="timeline-heading">
                                         <div class="i bi-book h5 timeline-title">
                                             &#160; Web Development
@@ -281,7 +281,7 @@
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-file-code fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Web Developer</h3>
-                            <p class="text-muted mb-0">HTML, JavaScript , SCSS, NodeJS, MongoDB, Bootstrap, Pug, Express, jQuery</p>
+                            <p class="text-muted mb-0">HTML, CSS, JavaScript, NodeJS, MongoDB, React, Bootstrap, Pug, Express, jQuery, SCSS,</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
@@ -295,7 +295,7 @@
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-brush fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Designer</h3>
-                            <p class="text-muted mb-0">Photoshop, Illustrator, inDesign, Lightroom, Gimp, Inkscape, Rawtherapee and Procreate</p>
+                            <p class="text-muted mb-0">Illustrator, Photoshop, Figma, inDesign, Gimp, Inkscape, Rawtherapee and Procreate</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
@@ -309,66 +309,76 @@
             </div>
         </section>
         <!-- Portfolio-->
-        <div id="portfolio">
+        <section class="page-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Recently done projects</h2>
+                <hr class="divider" />
+                <div class="mb-2 mt-2 button-group">
+                    <div class="btn category-link" data-category="all">All</div>
+                    <div class="btn category-link" data-category="videography">Videography</div>
+                    <div class="btn category-link" data-category="design">Design</div>
+                    <div class="btn category-link" data-category="webDevelopment">Programming</div>
+                </div>
+            </div>
             <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box lightBoxVideoLink" href="https://www.youtube.com/embed/DiwFIneRpRc" title="DIY Video Tutorial" target="_self">
+                <div class="row g-2">
+                    <div class="col-lg-4 col-sm-6 portfolio-item all webDevelopment">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Web App with Database and Jquery">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Videography</div>
-                                <div class="project-name">DIY Video Tutorial</div>
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Web Developer</div>
+                                <div class="project-name">Web App using JavaScript, CSS, EJS, Node.js, MongoDB</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Advertisement Poster">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Design</div>
-                                <div class="project-name">Advertisement Poster</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6 portfolio-item all videography">
                         <a class="portfolio-box lightBoxVideoLink" href="https://www.youtube.com/embed/e8kYeEuQ8kM" title="Landscape Video from Azores" target="_self">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Videography</div>
                                 <div class="project-name">Landscape Video from Azores</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box defaults" href="assets/img/portfolio/fullsize/4.jpg" title="Static Website">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                    <div class="col-lg-4 col-sm-6 portfolio-item all webDevelopment">
+                        <a class="portfolio-box defaults" href="assets/img/portfolio/fullsize/2.jpg" title="Static Website">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Web Developer</div>
-                                <div class="project-name">Static Website</div>
+                                <div class="project-name">Static Website using HTML, CSS</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Wedding Logo">
+                    <div class="col-lg-4 col-sm-6 portfolio-item all design">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Advertisement Poster">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Design</div>
+                                <div class="project-name">Advertisement Poster</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item all videography">
+                        <a class="portfolio-box lightBoxVideoLink" href="https://www.youtube.com/embed/DiwFIneRpRc" title="DIY Video Tutorial" target="_self">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Videography</div>
+                                <div class="project-name">DIY Video Tutorial</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item all design">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Wedding Logo">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Design</div>
                                 <div class="project-name">Wedding Logo</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Web App with Database and Jquery">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Web Developer</div>
-                                <div class="project-name">Web App with Database and Jquery</div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Call to action-->
         <section class="page-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
@@ -438,6 +448,8 @@
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Dária Manskaia Gonçalves</div></div>
         </footer>
+        <!-- Portfolio-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
         <!-- jQuery-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Bootstrap core JS-->
@@ -446,6 +458,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Typed plugin JS-->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!-- Isotope JS-->
+        <script src="js/isotope.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
