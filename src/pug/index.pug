@@ -269,6 +269,14 @@ html(lang='en')
             .container-fluid.p-0
                 .row.g-2
                     .col-lg-4.col-sm-6.portfolio-item.all.webDevelopment
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/7.jpg', title='React Web App')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/7.jpg', alt='...')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Web Developer
+                                .project-name
+                                    | Web App using React, TypeScript, JS, CSS
+                    .col-lg-4.col-sm-6.portfolio-item.all.webDevelopment
                         a.portfolio-box(href='assets/img/portfolio/fullsize/1.jpg', title='Web App with Database and Jquery')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/1.jpg', alt='...')
                             .portfolio-box-caption.p-3
@@ -285,7 +293,7 @@ html(lang='en')
                                 .project-name
                                     | Landscape Video from Azores
                     .col-lg-4.col-sm-6.portfolio-item.all.webDevelopment
-                        a.portfolio-box.defaults(href='assets/img/portfolio/fullsize/2.jpg', title='Static Website')
+                        a.portfolio-box.defaults(href='assets/img/portfolio/fullsize/3.jpg', title='Static Website')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
@@ -322,8 +330,10 @@ html(lang='en')
         // Call to action
         section.page-section.bg-primary.text-white
             .container.px-4.px-lg-5.text-center
-                h3.mb-4 And there's still my CV if you wish to take a look!
-                a.btn.btn-light.btn-lg(href='https://drive.google.com/file/d/1vs5Zmkfwc6xX520Qa_R0nA5fhqmEscWP/view?usp=sharing' target='_blank') CV here!
+                h3.mb-4 Final content drop!
+                a.btn.btn-light.btn-lg.content(href='https://drive.google.com/file/d/1vs5Zmkfwc6xX520Qa_R0nA5fhqmEscWP/view?usp=sharing' target='_blank') CV
+                a.btn.btn-light.btn-lg.content(href='https://reactworkexample.herokuapp.com/' target='_blank') React Web App
+                a.btn.btn-light.btn-lg.content(href='https://calm-meadow-89539.herokuapp.com/campgrounds' target='_blank') JavaScript Web App
 
         // Contact
         section#contact.page-section
